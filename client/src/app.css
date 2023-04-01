@@ -1,0 +1,116 @@
+/* #header{
+    height: 100px;
+} */
+body{
+    background-color: #337cbd;
+}
+
+#header-div{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    background-color: #6081c2;
+}
+
+#username-logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+#department{
+    display: flex;
+    align-self: center;
+}
+
+#username-logout h3{
+    background-color: aquamarine;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#sem-form-select-container{
+    display: flex;
+    margin: 10px;
+}
+
+#sem-form-select-container h4{
+    background-color: aquamarine;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#sem-select{
+    padding: 6px;
+}
+
+#form-select{
+    padding: 6px;
+    padding-right: 90px;
+}
+
+.responses-data { grid-area: responses-data; }
+.sem-data { grid-area: sem-data; }
+.en-no-data { grid-area: en-no-data; }
+.main-field {grid-area: main-field;}
+.item4 { grid-area: right; }
+.item6 {grid-area: main;}
+
+
+.responses {
+  display: grid;
+  grid-template-areas:
+    'responses-data responses-data responses-data'
+    'en-no-data sem-data main-field'
+    'en-no-data sem-data main-field';
+  gap: 10px;
+  background-color: #2196F3;
+}
+
+.responses > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+/* .pending-form{
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    
+    
+  } */
+  
+  .pending-form > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    
+    position: auto;
+      top: auto;
+      left: auto;
+  }
+  .response-block {
+    display: flex;
+    background-color: #337cbd;
+  }
+  
+  .response-block > div {
+    background-color: #2196F3;
+    margin: auto;
+    padding: 10px;
+    height: 200px;
+    width: 80%;
+    
+  }
